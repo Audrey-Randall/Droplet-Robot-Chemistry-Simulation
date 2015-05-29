@@ -5,33 +5,59 @@
 #include "droplet_programs/test_code.h"
 #include "Atom.h"
 #include "stdbool.h"
+#include <stdio.h>
 
+//When using Tera Term, go to Setup -> Serial port and change Baud rate to 115200
 
-//control+k then c will comment everything highlighted. control+k then u uncomments
+//also makes printf work
+int usart_putchar_printf(char var, FILE *stream) {
+    if (var == '\n') usart_putchar('\r');
+    usart_putchar(var);
+    return 0;
+}
 
-Atom* initAtoms(int numAtoms, Atom* atomArray)
+static FILE mystdout = FDEV_SETUP_STREAM(usart_putchar_printf, NULL, _FDEV_SETUP_WRITE); //makes printf work?
+//stdout = &mystdout;
+
+//arSize is the size of both arrays (they're the same length). atomArray is to be returned. numArray is the array of atomic numbers that must be converted to an array of Atom structs.
+Atom* initAtoms(int arSize, Atom* atomArray, int* numArray)
 {
 	//bond type, diatomic, valence shell, name
 	//Bond type 0 = ionic
 	//Diatomic 0 = false
 	
-	int index = 0;
-	Atom H = {1, 1, {1, 0, -1, -1, -1, -1, -1, -1}, "H", 1};
-	atomArray[index] = H;
-	if(index < numAtoms) index = index + 1;
-	else return atomArray;
-	Atom He = {1, 0, {1, 1, -1, -1, -1, -1, -1, -1}, "He", 2};
-	atomArray[index] = He;
-	if(index < numAtoms) index = index + 1;
-	else return atomArray;
-	Atom Li = {0, 0, {1, 0, 0, 0, 0, 0, 0, 0}, "Li", 3};
-	atomArray[index] = Li;
-	if(index < numAtoms) index = index + 1;
-	else return atomArray;
-	Atom Be = {0, 0, {1, 1, 0, 0, 0, 0, 0, 0}, "Be", 4};
-	atomArray[index] = Be;
-	if(index < numAtoms) index = index + 1;
-	else return atomArray;
+	for(int i = 0; i < arSize; i++)
+	{
+		int atomicNum= numArray[i];
+		switch(atomicNum){
+			case 1:
+			{
+				Atom H = {1, 1, {1, 0, -1, -1, -1, -1, -1, -1}, "H", 1};
+				atomArray[i] = H;
+				break;
+			}
+			case 2:
+			{
+				Atom He = {1, 0, {1, 1, -1, -1, -1, -1, -1, -1}, "He", 2};
+				atomArray[i] = He;
+				break;
+			}
+			case 3:
+			{
+				Atom Li = {0, 0, {1, 0, 0, 0, 0, 0, 0, 0}, "Li", 3};
+				atomArray[i] = Li;
+				break;
+			}
+			case 4:
+			{
+				Atom Be = {0, 0, {1, 1, 0, 0, 0, 0, 0, 0}, "Be", 4};
+				atomArray[i] = Be;
+				break;
+			}
+			default:
+				printf("No such element");
+		}
+	}
 
 	printf("Not enough elements exist or I didn't initialize enough. Here's what we've got.");
 	return atomArray;
@@ -43,10 +69,13 @@ Atom* initAtoms(int numAtoms, Atom* atomArray)
  */
 void init()
 {
-	uint8_t test = 255;
-	int numAtoms = 3; //this should eventually be user input
-	Atom atomArray[numAtoms]; //does this belong here? Should it be global?
-	initAtoms(3, atomArray);
+	printf("test");
+	set_rgb(10, 10, 255); //this is a test line
+	//Eventually, this array should be created by user input. It's an array of the atomic numbers of all the atoms we want to make.	
+	int numArray[] = {1, 2, 3, 4};
+	int arSize = (sizeof(numArray)/sizeof(numArray[0]));
+	Atom atomArray[arSize]; //does this belong here? Should it be global?
+	initAtoms(arSize, atomArray, numArray);
 	printf("atomArray[0].name = ", atomArray[0].name);
 }
 
@@ -55,7 +84,7 @@ void init()
  */
 void loop()
 {
-	
+	//set_rgb(255, 255, 255);
 }
 
 /*
