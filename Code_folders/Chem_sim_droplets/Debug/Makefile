@@ -56,7 +56,8 @@ C_SRCS +=  \
 ../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/rgb_sensor.c \
 ../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/scheduler.c \
 ../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/serial_handler.c \
-../main.c
+../main.c \
+../vector.c
 
 
 PREPROCESSING_SRCS +=  \
@@ -89,7 +90,8 @@ src/scheduler.o \
 src/scheduler_asm.o \
 src/serial_handler.o \
 src/sp_driver.o \
-main.o
+main.o \
+vector.o
 
 OBJS_AS_ARGS +=  \
 src/boot.o \
@@ -112,7 +114,8 @@ src/scheduler.o \
 src/scheduler_asm.o \
 src/serial_handler.o \
 src/sp_driver.o \
-main.o
+main.o \
+vector.o
 
 C_DEPS +=  \
 src/boot.d \
@@ -135,7 +138,8 @@ src/scheduler.d \
 src/scheduler_asm.d \
 src/serial_handler.d \
 src/sp_driver.d \
-main.d
+main.d \
+vector.d
 
 C_DEPS_AS_ARGS +=  \
 src/boot.d \
@@ -158,7 +162,8 @@ src/scheduler.d \
 src/scheduler_asm.d \
 src/serial_handler.d \
 src/sp_driver.d \
-main.d
+main.d \
+vector.d
 
 OUTPUT_FILE_PATH +=Chem_sim_droplets.elf
 
@@ -211,17 +216,19 @@ LINKER_SCRIPT_DEP+=
 
 
 
+
+
 src/%.o: ../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/%.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 4.8.1
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\cu-droplet-master\cu-droplet-master\droplet_code\include" -I"C:\cu-droplet-master\cu-droplet-master\droplet_code"  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -Wall -mmcu=atxmega128a3u -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\cu-droplet-master\cu-droplet-master\droplet_code\include" -I"C:\cu-droplet-master\cu-droplet-master\droplet_code" -I"C:\Users\Audrey\Documents\Audrey\Freshman Year CU\Correl Lab\Code_folders"  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -Wall -mmcu=atxmega128a3u -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
 ./%.o: .././%.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 4.8.1
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\cu-droplet-master\cu-droplet-master\droplet_code\include" -I"C:\cu-droplet-master\cu-droplet-master\droplet_code"  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -Wall -mmcu=atxmega128a3u -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\cu-droplet-master\cu-droplet-master\droplet_code\include" -I"C:\cu-droplet-master\cu-droplet-master\droplet_code" -I"C:\Users\Audrey\Documents\Audrey\Freshman Year CU\Correl Lab\Code_folders"  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -Wall -mmcu=atxmega128a3u -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
