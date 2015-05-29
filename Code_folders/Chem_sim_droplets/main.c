@@ -7,6 +7,10 @@
 #include "stdbool.h"
 #include <stdio.h>
 
+#define FOSC 16000000
+#define BAUD 115200
+#define MYUBRR (((((FOSC * 10) / (16L * BAUD)) + 5) / 10) - 1)
+
 //When using Tera Term, go to Setup -> Serial port and change Baud rate to 115200
 
 //also makes printf work
@@ -20,11 +24,12 @@ static FILE mystdout = FDEV_SETUP_STREAM(usart_putchar_printf, NULL, _FDEV_SETUP
 //stdout = &mystdout;
 
 //arSize is the size of both arrays (they're the same length). atomArray is to be returned. numArray is the array of atomic numbers that must be converted to an array of Atom structs.
-Atom* initAtoms(int arSize, Atom* atomArray, int* numArray)
+Atom* initAtoms(int arSize, int* numArray)
 {
 	//bond type, diatomic, valence shell, name
 	//Bond type 0 = ionic
 	//Diatomic 0 = false
+	static Atom atomArray[4];
 	
 	for(int i = 0; i < arSize; i++)
 	{
@@ -57,10 +62,11 @@ Atom* initAtoms(int arSize, Atom* atomArray, int* numArray)
 			default:
 				printf("No such element");
 		}
-	}
+	
 
-	printf("Not enough elements exist or I didn't initialize enough. Here's what we've got.");
-	return atomArray;
+		//printf("Not enough elements exist or I didn't initialize enough. Here's what we've got. \n");
+		//return atomArray;
+	}
 }
 
 
@@ -69,14 +75,18 @@ Atom* initAtoms(int arSize, Atom* atomArray, int* numArray)
  */
 void init()
 {
-	printf("test");
+	//printf("test \n");
 	set_rgb(10, 10, 255); //this is a test line
 	//Eventually, this array should be created by user input. It's an array of the atomic numbers of all the atoms we want to make.	
 	int numArray[] = {1, 2, 3, 4};
 	int arSize = (sizeof(numArray)/sizeof(numArray[0]));
-	Atom atomArray[arSize]; //does this belong here? Should it be global?
-	initAtoms(arSize, atomArray, numArray);
-	printf("atomArray[0].name = ", atomArray[0].name);
+	Atom* atomArray;
+	atomArray = initAtoms(arSize, numArray);
+	for(int i = 0; i < arSize; i++)
+	{
+		printf("atomArray[i].name = %s \n", atomArray[i].name);
+	}
+	
 }
 
 /*
