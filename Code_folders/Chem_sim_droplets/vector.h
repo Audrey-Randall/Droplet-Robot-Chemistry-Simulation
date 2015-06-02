@@ -3,16 +3,16 @@
 
 typedef struct vector_ {
 	void** data;
-	int size;
-	int count;
+	uint8_t size;
+	uint8_t count;
 } vector;
 
 void vector_init(vector*);
-int vector_count(vector*);
+uint8_t vector_count(vector*);
 void vector_add(vector*, void*);
-void vector_set(vector*, int, void*);
-void *vector_get(vector*, int);
-void vector_delete(vector*, int);
+void vector_set(vector*, uint8_t, void*);
+void *vector_get(vector*, uint8_t);
+void vector_delete(vector*, uint8_t);
 void vector_free(vector*);
 
 #endif

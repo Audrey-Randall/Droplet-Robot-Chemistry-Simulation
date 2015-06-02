@@ -1,38 +1,19 @@
 #include "droplet_programs/test_code.h"
 #include "Atom.h"
-#include "stdbool.h"
-#include <stdio.h>
 #include "vector.h"
 
-int MY_CHEM_ID = 1; //This will eventually be written to the file by writeFiles.c!
-
-#define FOSC 16000000
-#define BAUD 115200
-#define MYUBRR (((((FOSC * 10) / (16L * BAUD)) + 5) / 10) - 1)
-
-//also makes printf work
-int usart_putchar_printf(char var, FILE *stream) {
-	if (var == '\n') usart_putchar('\r');
-	usart_putchar(var);
-	return 0;
-}
-
-static FILE mystdout = FDEV_SETUP_STREAM(usart_putchar_printf, NULL, _FDEV_SETUP_WRITE); //makes printf work?
-//stdout = &mystdout;
-//When using Tera Term, go to Setup -> Serial port and change Baud rate to 115200
+uint8_t MY_CHEM_ID = 1; //This will eventually be written to the file by writeFiles.c!
 
 //This is a list of Atoms. Should they be static or constant or something?
 //bond type, diatomic, valence shell, name, atomic number
 //Bond type 0 = ionic
 //Diatomic 0 = false
-Atom H = {1, 1, {1, 0, -1, -1, -1, -1, -1, -1}, "H", 1, {1, 1, 1, 0, -1,-1, -1, -1, -1, -1, 'H', ' ', 1}};
-Atom He = {1, 0, {1, 1, -1, -1, -1, -1, -1, -1}, "He", 2, {1, 0, 1, 1, -1, -1, -1, -1, -1, -1, 'H', 'e', 2}};
-Atom Li = {0, 0, {1, 0, 0, 0, 0, 0, 0, 0}, "Li", 3, {0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 'L', 'i', 3,}};
-Atom Be = {0, 0, {1, 1, 0, 0, 0, 0, 0, 0}, "Be", 4, {0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 'B', 'e', 4,}};
-	
+Atom H =  {{1, 0, -1, -1, -1, -1, -1, -1}, "H",1, 1, 1};
+Atom He = {{1, 1, -1, -1, -1, -1, -1, -1}, "He", 1, 0, 2};
+Atom Li = {{1, 0, 0, 0, 0, 0, 0, 0}, "Li", 0, 0, 3};
+Atom Be = {{1, 1, 0, 0, 0, 0, 0, 0}, "Be", 0, 0, 4};
 
-
-Atom getAtomFromAtomicNum(int atomicNum)
+Atom getAtomFromAtomicNum(uint8_t atomicNum)
 {
 	switch(atomicNum){
 		case 1:
@@ -60,25 +41,17 @@ Atom getAtomFromAtomicNum(int atomicNum)
 	}
 }
 
-void loadSingleChemID(Atom ID)
+void sendChemID(Atom myID)
 {
-	//Somehow store the Atom struct on the Droplet
-}
-
-void sendChemID()
-{
-	//send the character array associated with this atom to all nearby droplets?
-}
-
-vector recieveAllChemIDs()
-{
-	//no idea how to set this up, but somehow I want to return a vector of character arrays.
-}
-
-void react(vector AllChemIDs)
-{
-	//recieve the character arrays. Then do stuff!
-	
+	//send the character array associated with this atom to all nearby droplets? is this the right function?
+	//For now, it needs to go to every droplet on the board. Later, possibly change that.
+	/*
+	for(uint8_t i = 0; i < (max number of directions); i++)
+	{
+		ir_send( (some function of i), myID.chemID, 13);
+	}
+	*/
+	ir_send(ALL_DIRS, (char*)(&myID), sizeof(Atom));
 }
 
 /*
@@ -95,10 +68,12 @@ void init()
 /*
  * The code in this function will be called repeatedly, as fast as it can execute.
  */
-void loop()
+void loop(Atom myID)
 {
 	//set_rgb(255, 255, 255);
 	//wait for half a second?
+	sendChemID(myID);
+	delay_ms(1000);
 }
 
 /*
@@ -107,6 +82,12 @@ void loop()
  */
 void handle_msg(ir_msg* msg_struct)
 {
-	//react();
+	Atom* near_atom;
+	if(msg_struct->length==sizeof(Atom))
+	{
+		near_atom = (Atom*)(msg_struct->msg); //do some kind of check to make sure this is actually an atom.
+	}
+
+	printf("in handle_msg, near_atom.name = %s \n", near_atom->name);
 }
 

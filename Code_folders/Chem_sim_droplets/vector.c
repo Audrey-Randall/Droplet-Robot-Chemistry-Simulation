@@ -10,7 +10,7 @@ void vector_init(vector *v)
 	v->count = 0;
 }
 
-int vector_count(vector *v)
+uint8_t vector_count(vector *v)
 {
 	return v->count;
 }
@@ -19,7 +19,7 @@ void vector_add(vector *v, void *e)
 {
 	if (v->size == 0) {
 		v->size = 10;
-		v->data = malloc(sizeof(void*) * v->size);
+		v->data = malloc(sizeof(void*) * v->size); //THIS CAUSES PROBLEMS
 		memset(v->data, '\0', sizeof(void) * v->size);
 	}
 	
@@ -34,7 +34,7 @@ void vector_add(vector *v, void *e)
 	v->count++;
 }
 
-void vector_set(vector *v, int index, void *e)
+void vector_set(vector *v, uint8_t index, void *e)
 {
 	if (index >= v->count) {
 		return;
@@ -43,7 +43,7 @@ void vector_set(vector *v, int index, void *e)
 	v->data[index] = e;
 }
 
-void *vector_get(vector *v, int index)
+void *vector_get(vector *v, uint8_t index)
 {
 	if (index >= v->count) {
 		return;
@@ -54,7 +54,7 @@ void *vector_get(vector *v, int index)
 
 
 //possible bug? https://gist.github.com/EmilHernvall/953968
-void vector_delete(vector *v, int index)
+void vector_delete(vector *v, uint8_t index)
 {
 	if (index >= v->count) {
 		return;
@@ -62,7 +62,7 @@ void vector_delete(vector *v, int index)
 	
 	v->data[index] = NULL;
 	
-	int i, j;
+	uint8_t i, j;
 	void **newarr = (void**)malloc(sizeof(void*) * v->count * 2);
 	for (i = 0, j = 0; i < v->count; i++) {
 		if (v->data[i] != NULL) {
