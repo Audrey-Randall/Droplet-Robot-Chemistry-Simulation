@@ -90,6 +90,7 @@ void loop()
 	//printf("LOOP \r\n");
 }
 
+//This is still hitting the buffer-full-delay-indefinitely error. It needs some sort of synchronization with the other Droplets so they don't send at the same time.
 void periodic_rnb_broadcast()
 {
 	printf("periodic_rnb_broadcast \r\n");
