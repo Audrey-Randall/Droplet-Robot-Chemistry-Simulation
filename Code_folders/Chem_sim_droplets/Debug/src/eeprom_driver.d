@@ -1,6 +1,6 @@
 src/eeprom_driver.d src/eeprom_driver.o: \
- ../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/eeprom_driver.c \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/eeprom_driver.h \
+ ../../../../../Git/cu-droplet/droplet_code/src/eeprom_driver.c \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/eeprom_driver.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\io.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\inttypes.h \
@@ -17,7 +17,7 @@ src/eeprom_driver.d src/eeprom_driver.o: \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\string.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\lib\gcc\avr\4.8.1\include\stddef.h
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/eeprom_driver.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/eeprom_driver.h:
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\io.h:
 

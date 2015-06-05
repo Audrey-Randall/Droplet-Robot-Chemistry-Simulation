@@ -1,6 +1,4 @@
-#include "droplet_programs/test_code.h"
-#include "Atom.h"
-#include "vector.h"
+#include "main.h"
 
 uint8_t MY_CHEM_ID = 1; //This will eventually be written to the file by writeFiles.c!
 
@@ -41,18 +39,18 @@ Atom getAtomFromAtomicNum(uint8_t atomicNum)
 	}
 }
 
-void sendChemID(Atom myID)
+char* global_Atom_str;
+
+void sendChemID(Atom ID)
 {
-	//send the character array associated with this atom to all nearby droplets? is this the right function?
+	//send the character array associated with this atom to all nearby droplets
 	//For now, it needs to go to every droplet on the board. Later, possibly change that.
-	/*
-	for(uint8_t i = 0; i < (max number of directions); i++)
-	{
-		ir_send( (some function of i), myID.chemID, 13);
-	}
-	*/
-	ir_send(ALL_DIRS, (char*)(&myID), sizeof(Atom));
+	global_Atom_str = (char*)(&ID);
+	ir_send(ALL_DIRS, (char*)(&ID), sizeof(Atom));
+	printf("sending chem ID \r\n");
 }
+
+
 
 /*
  * Any code in this function will be run once, when the robot starts.
@@ -60,20 +58,43 @@ void sendChemID(Atom myID)
 void init()
 {
 
-	set_rgb(10, 10, 255); //this is a test line
-	Atom myID = getAtomFromAtomicNum(MY_CHEM_ID);
-	printf("this.name = %s \n", myID.name);
+	set_rgb(10, 255, 255); //this is a test line
+	myID = getAtomFromAtomicNum(MY_CHEM_ID);
+	printf("this.name = %c%c \r\n", myID.name[0], myID.name[1]);
+	periodic_rnb_broadcast();
 }
 
 /*
  * The code in this function will be called repeatedly, as fast as it can execute.
  */
-void loop(Atom myID)
+void loop()
 {
 	//set_rgb(255, 255, 255);
-	//wait for half a second?
+	//why does the LED flicker once per loop?
 	sendChemID(myID);
 	delay_ms(1000);
+	uint8_t recieving_id;
+	
+	uint8_t dir_mask = check_collisions();
+	printf("Collisions: %02hX \r\n", dir_mask);
+	if(rnb_updated)
+	{
+		recieving_id = last_good_rnb.id_number;
+		printf("recieving_id = %u. \r\n");
+		//last_good_rnb.range
+		//last_good_rnb.bearing
+		//last_good_rnb.heading
+		
+		rnb_updated=0;
+	}
+	//printf("LOOP \r\n");
+}
+
+void periodic_rnb_broadcast()
+{
+	printf("periodic_rnb_broadcast \r\n");
+	broadcast_rnb_data();
+	schedule_task(RNB_BROADCAST_PERIOD, periodic_rnb_broadcast, NULL);
 }
 
 /*
@@ -88,6 +109,14 @@ void handle_msg(ir_msg* msg_struct)
 		near_atom = (Atom*)(msg_struct->msg); //do some kind of check to make sure this is actually an atom.
 	}
 
-	printf("in handle_msg, near_atom.name = %s \n", near_atom->name);
+	printf("in handle_msg, near_atom.name = %c%c \r\n", near_atom->name[0], near_atom->name[1]);
+	if(near_atom->diatomic == 1 && near_atom->atomicNum == myID.atomicNum)
+	{
+		printf("found diatomic partner \r\n");
+		//walk(NORTH, 50);
+		delay_ms(1000);
+		stop();
+	}
+	printf("END OF HANDLE_MSG \r\n");
 }
 

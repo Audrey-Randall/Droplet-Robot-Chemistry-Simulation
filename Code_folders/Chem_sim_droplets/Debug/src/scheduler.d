@@ -1,6 +1,6 @@
 src/scheduler.d src/scheduler.o: \
- ../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/scheduler.c \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/scheduler.h \
+ ../../../../../Git/cu-droplet/droplet_code/src/scheduler.c \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/scheduler.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\io.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\inttypes.h \
@@ -23,7 +23,7 @@ src/scheduler.d src/scheduler.o: \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\stdio.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\lib\gcc\avr\4.8.1\include\stdarg.h
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/scheduler.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/scheduler.h:
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\io.h:
 

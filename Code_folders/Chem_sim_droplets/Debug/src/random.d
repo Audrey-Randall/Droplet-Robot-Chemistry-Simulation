@@ -1,6 +1,6 @@
 src/random.d src/random.o: \
- ../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/random.c \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/random.h \
+ ../../../../../Git/cu-droplet/droplet_code/src/random.c \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/random.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\io.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\inttypes.h \
@@ -14,7 +14,7 @@ src/random.d src/random.o: \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\fuse.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\lock.h
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/random.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/random.h:
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\io.h:
 

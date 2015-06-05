@@ -1,6 +1,6 @@
 src/serial_handler.d src/serial_handler.o: \
- ../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/serial_handler.c \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/serial_handler.h \
+ ../../../../../Git/cu-droplet/droplet_code/src/serial_handler.c \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/serial_handler.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\io.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\inttypes.h \
@@ -15,11 +15,11 @@ src/serial_handler.d src/serial_handler.o: \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\lock.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\string.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\lib\gcc\avr\4.8.1\include\stddef.h \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/droplet_init.h \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/droplet_init.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\util\crc16.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\interrupt.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\pgmspace.h \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/scheduler.h \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/scheduler.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\util\atomic.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\util\delay.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
@@ -27,24 +27,24 @@ src/serial_handler.d src/serial_handler.o: \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\stdlib.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\stdio.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\lib\gcc\avr\4.8.1\include\stdarg.h \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/pc_comm.h \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/serial_handler.h \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/rgb_led.h \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/rgb_sensor.h \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/power.h \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/random.h \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/ecc.h \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/ir_comm.h \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/ir_sensor.h \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/delay_x.h \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/i2c.h \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/motor.h \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/flash_api.h \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/sp_driver.h \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/eeprom_driver.h \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/range_algs.h
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/pc_comm.h \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/serial_handler.h \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/rgb_led.h \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/rgb_sensor.h \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/flash_api.h \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/sp_driver.h \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/eeprom_driver.h \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/power.h \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/random.h \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/ecc.h \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/ir_comm.h \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/ir_sensor.h \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/delay_x.h \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/i2c.h \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/motor.h \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/range_algs.h
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/serial_handler.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/serial_handler.h:
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\io.h:
 
@@ -74,7 +74,7 @@ c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-g
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\lib\gcc\avr\4.8.1\include\stddef.h:
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/droplet_init.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/droplet_init.h:
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\util\crc16.h:
 
@@ -82,7 +82,7 @@ c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-g
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\pgmspace.h:
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/scheduler.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/scheduler.h:
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\util\atomic.h:
 
@@ -98,34 +98,34 @@ c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-g
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\lib\gcc\avr\4.8.1\include\stdarg.h:
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/pc_comm.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/pc_comm.h:
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/serial_handler.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/serial_handler.h:
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/rgb_led.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/rgb_led.h:
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/rgb_sensor.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/rgb_sensor.h:
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/power.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/flash_api.h:
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/random.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/sp_driver.h:
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/ecc.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/eeprom_driver.h:
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/ir_comm.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/power.h:
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/ir_sensor.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/random.h:
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/delay_x.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/ecc.h:
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/i2c.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/ir_comm.h:
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/motor.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/ir_sensor.h:
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/flash_api.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/delay_x.h:
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/sp_driver.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/i2c.h:
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/eeprom_driver.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/motor.h:
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/range_algs.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/range_algs.h:

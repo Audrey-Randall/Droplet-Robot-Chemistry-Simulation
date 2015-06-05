@@ -1,6 +1,6 @@
 src/rgb_sensor.d src/rgb_sensor.o: \
- ../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/rgb_sensor.c \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/rgb_sensor.h \
+ ../../../../../Git/cu-droplet/droplet_code/src/rgb_sensor.c \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/rgb_sensor.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\io.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\inttypes.h \
@@ -13,19 +13,22 @@ src/rgb_sensor.d src/rgb_sensor.o: \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\xmega.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\fuse.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\lock.h \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/rgb_led.h \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/rgb_led.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\stdlib.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\lib\gcc\avr\4.8.1\include\stddef.h \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/scheduler.h \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/scheduler.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\interrupt.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\util\atomic.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\util\delay.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\math.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\stdio.h \
- c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\lib\gcc\avr\4.8.1\include\stdarg.h
+ c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\lib\gcc\avr\4.8.1\include\stdarg.h \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/flash_api.h \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/sp_driver.h \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/eeprom_driver.h
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/rgb_sensor.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/rgb_sensor.h:
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\io.h:
 
@@ -51,13 +54,13 @@ c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-g
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\lock.h:
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/rgb_led.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/rgb_led.h:
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\stdlib.h:
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\lib\gcc\avr\4.8.1\include\stddef.h:
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/scheduler.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/scheduler.h:
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\interrupt.h:
 
@@ -72,3 +75,9 @@ c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-g
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\stdio.h:
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\lib\gcc\avr\4.8.1\include\stdarg.h:
+
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/flash_api.h:
+
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/sp_driver.h:
+
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/eeprom_driver.h:

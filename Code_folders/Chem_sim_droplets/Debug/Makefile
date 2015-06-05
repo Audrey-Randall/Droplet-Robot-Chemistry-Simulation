@@ -39,38 +39,36 @@ SUBDIRS :=  \
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
-../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/boot.c \
-../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/droplet_init.c \
-../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/ecc.c \
-../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/eeprom_driver.c \
-../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/flash_api.c \
-../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/i2c.c \
-../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/ir_comm.c \
-../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/ir_sensor.c \
-../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/motor.c \
-../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/pc_comm.c \
-../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/power.c \
-../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/random.c \
-../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/range_algs.c \
-../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/rgb_led.c \
-../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/rgb_sensor.c \
-../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/scheduler.c \
-../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/serial_handler.c \
+../../../../../Git/cu-droplet/droplet_code/src/droplet_init.c \
+../../../../../Git/cu-droplet/droplet_code/src/ecc.c \
+../../../../../Git/cu-droplet/droplet_code/src/eeprom_driver.c \
+../../../../../Git/cu-droplet/droplet_code/src/flash_api.c \
+../../../../../Git/cu-droplet/droplet_code/src/i2c.c \
+../../../../../Git/cu-droplet/droplet_code/src/ir_comm.c \
+../../../../../Git/cu-droplet/droplet_code/src/ir_sensor.c \
+../../../../../Git/cu-droplet/droplet_code/src/motor.c \
+../../../../../Git/cu-droplet/droplet_code/src/pc_comm.c \
+../../../../../Git/cu-droplet/droplet_code/src/power.c \
+../../../../../Git/cu-droplet/droplet_code/src/random.c \
+../../../../../Git/cu-droplet/droplet_code/src/range_algs.c \
+../../../../../Git/cu-droplet/droplet_code/src/rgb_led.c \
+../../../../../Git/cu-droplet/droplet_code/src/rgb_sensor.c \
+../../../../../Git/cu-droplet/droplet_code/src/scheduler.c \
+../../../../../Git/cu-droplet/droplet_code/src/serial_handler.c \
 ../main.c \
 ../vector.c
 
 
 PREPROCESSING_SRCS +=  \
-../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/flash_api_asm.s \
-../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/scheduler_asm.s \
-../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/sp_driver.s
+../../../../../Git/cu-droplet/droplet_code/src/flash_api_asm.s \
+../../../../../Git/cu-droplet/droplet_code/src/scheduler_asm.s \
+../../../../../Git/cu-droplet/droplet_code/src/sp_driver.s
 
 
 ASM_SRCS += 
 
 
 OBJS +=  \
-src/boot.o \
 src/droplet_init.o \
 src/ecc.o \
 src/eeprom_driver.o \
@@ -94,7 +92,6 @@ main.o \
 vector.o
 
 OBJS_AS_ARGS +=  \
-src/boot.o \
 src/droplet_init.o \
 src/ecc.o \
 src/eeprom_driver.o \
@@ -118,7 +115,6 @@ main.o \
 vector.o
 
 C_DEPS +=  \
-src/boot.d \
 src/droplet_init.d \
 src/ecc.d \
 src/eeprom_driver.d \
@@ -142,7 +138,6 @@ main.d \
 vector.d
 
 C_DEPS_AS_ARGS +=  \
-src/boot.d \
 src/droplet_init.d \
 src/ecc.d \
 src/eeprom_driver.d \
@@ -216,19 +211,17 @@ LINKER_SCRIPT_DEP+=
 
 
 
-
-
-src/%.o: ../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/%.c
+src/%.o: ../../../../../Git/cu-droplet/droplet_code/src/%.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 4.8.1
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\cu-droplet-master\cu-droplet-master\droplet_code\include" -I"C:\cu-droplet-master\cu-droplet-master\droplet_code" -I"C:\Users\Audrey\Documents\Audrey\Freshman Year CU\Correl Lab\Code_folders"  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -Wall -mmcu=atxmega128a3u -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Users\John Klingner\Documents\Git\cu-droplet\droplet_code\include" -I"C:\Users\John Klingner\Documents\Git\cu-droplet\droplet_code" -I"C:\Users\John Klingner\Documents\Audrey\Correl Lab\Code_folders"  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -Wall -mmcu=atxmega128a3u -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
 ./%.o: .././%.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 4.8.1
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\cu-droplet-master\cu-droplet-master\droplet_code\include" -I"C:\cu-droplet-master\cu-droplet-master\droplet_code" -I"C:\Users\Audrey\Documents\Audrey\Freshman Year CU\Correl Lab\Code_folders"  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -Wall -mmcu=atxmega128a3u -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Users\John Klingner\Documents\Git\cu-droplet\droplet_code\include" -I"C:\Users\John Klingner\Documents\Git\cu-droplet\droplet_code" -I"C:\Users\John Klingner\Documents\Audrey\Correl Lab\Code_folders"  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -Wall -mmcu=atxmega128a3u -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
@@ -239,21 +232,21 @@ src/%.o: ../../../../../../../../../../cu-droplet-master/cu-droplet-master/dropl
 
 
 # AVR32/GNU Assembler
-src/flash_api_asm.o: ../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/flash_api_asm.s
+src/flash_api_asm.o: ../../../../../Git/cu-droplet/droplet_code/src/flash_api_asm.s
 	@echo Building file: $<
 	@echo Invoking: AVR32/GNU Assembler : 4.8.1
 	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE) -Wa,-gdwarf2 -x assembler-with-cpp -c -mmcu=atxmega128a3u -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)" -mrelax -Wa,-g   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
-src/scheduler_asm.o: ../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/scheduler_asm.s
+src/scheduler_asm.o: ../../../../../Git/cu-droplet/droplet_code/src/scheduler_asm.s
 	@echo Building file: $<
 	@echo Invoking: AVR32/GNU Assembler : 4.8.1
 	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE) -Wa,-gdwarf2 -x assembler-with-cpp -c -mmcu=atxmega128a3u -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)" -mrelax -Wa,-g   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
-src/sp_driver.o: ../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/sp_driver.s
+src/sp_driver.o: ../../../../../Git/cu-droplet/droplet_code/src/sp_driver.s
 	@echo Building file: $<
 	@echo Invoking: AVR32/GNU Assembler : 4.8.1
 	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE) -Wa,-gdwarf2 -x assembler-with-cpp -c -mmcu=atxmega128a3u -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)" -mrelax -Wa,-g   -o "$@" "$<" 
@@ -261,7 +254,7 @@ src/sp_driver.o: ../../../../../../../../../../cu-droplet-master/cu-droplet-mast
 	
 
 
-src/%.o: ../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/%.s
+src/%.o: ../../../../../Git/cu-droplet/droplet_code/src/%.s
 	@echo Building file: $<
 	@echo Invoking: AVR32/GNU Assembler : 4.8.1
 	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE) -Wa,-gdwarf2 -x assembler-with-cpp -c -mmcu=atxmega128a3u -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)" -mrelax -Wa,-g   -o "$@" "$<" 

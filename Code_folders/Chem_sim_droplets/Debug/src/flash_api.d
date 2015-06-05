@@ -1,6 +1,6 @@
 src/flash_api.d src/flash_api.o: \
- ../../../../../../../../../../cu-droplet-master/cu-droplet-master/droplet_code/src/flash_api.c \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/flash_api.h \
+ ../../../../../Git/cu-droplet/droplet_code/src/flash_api.c \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/flash_api.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\io.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\inttypes.h \
@@ -15,10 +15,10 @@ src/flash_api.d src/flash_api.o: \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\lock.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\interrupt.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\util\atomic.h \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/sp_driver.h \
- C:\cu-droplet-master\cu-droplet-master\droplet_code\include/eeprom_driver.h
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/sp_driver.h \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/eeprom_driver.h
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/flash_api.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/flash_api.h:
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\io.h:
 
@@ -48,6 +48,6 @@ c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-g
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\util\atomic.h:
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/sp_driver.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/sp_driver.h:
 
-C:\cu-droplet-master\cu-droplet-master\droplet_code\include/eeprom_driver.h:
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/eeprom_driver.h:

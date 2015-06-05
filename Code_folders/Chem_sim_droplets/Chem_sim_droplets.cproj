@@ -27,14 +27,14 @@
     <BootSegment>2</BootSegment>
     <eraseonlaunchrule>0</eraseonlaunchrule>
     <AsfFrameworkConfig>
-      <framework-data xmlns="">
+      <framework-data>
         <options />
         <configurations />
         <files />
         <documentation help="" />
         <offline-documentation help="" />
         <dependencies>
-          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.21.0" />
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.6.0" />
         </dependencies>
       </framework-data>
     </AsfFrameworkConfig>
@@ -107,45 +107,45 @@
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <ToolchainSettings>
       <AvrGcc>
-  <avrgcc.common.optimization.RelaxBranches>True</avrgcc.common.optimization.RelaxBranches>
-  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
-  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
-  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
-  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
-  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
-  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
-  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
-  <avrgcc.compiler.symbols.DefSymbols>
-    <ListValues>
-      <Value>DEBUG</Value>
-    </ListValues>
-  </avrgcc.compiler.symbols.DefSymbols>
-  <avrgcc.compiler.directories.IncludePaths>
-    <ListValues>
-      <Value>C:\cu-droplet-master\cu-droplet-master\droplet_code\include</Value>
-      <Value>C:\cu-droplet-master\cu-droplet-master\droplet_code</Value>
-      <Value>C:\Users\Audrey\Documents\Audrey\Freshman Year CU\Correl Lab\Code_folders</Value>
-    </ListValues>
-  </avrgcc.compiler.directories.IncludePaths>
-  <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
-  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
-  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
-  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
-  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
-  <avrgcc.linker.general.UseVprintfLibrary>True</avrgcc.linker.general.UseVprintfLibrary>
-  <avrgcc.linker.libraries.Libraries>
-    <ListValues>
-      <Value>libm</Value>
-    </ListValues>
-  </avrgcc.linker.libraries.Libraries>
-  <avrgcc.linker.memorysettings.Flash>
-    <ListValues>
-      <Value>.BOOT = 0x010000</Value>
-    </ListValues>
-  </avrgcc.linker.memorysettings.Flash>
-  <avrgcc.linker.miscellaneous.LinkerFlags>-lprintf_flt</avrgcc.linker.miscellaneous.LinkerFlags>
-  <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
-</AvrGcc>
+        <avrgcc.common.optimization.RelaxBranches>True</avrgcc.common.optimization.RelaxBranches>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>C:\Users\John Klingner\Documents\Git\cu-droplet\droplet_code\include</Value>
+            <Value>C:\Users\John Klingner\Documents\Git\cu-droplet\droplet_code\</Value>
+            <Value>C:\Users\John Klingner\Documents\Audrey\Correl Lab\Code_folders</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.linker.general.UseVprintfLibrary>True</avrgcc.linker.general.UseVprintfLibrary>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+        <avrgcc.linker.memorysettings.Flash>
+          <ListValues>
+            <Value>.BOOT = 0x010000</Value>
+          </ListValues>
+        </avrgcc.linker.memorysettings.Flash>
+        <avrgcc.linker.miscellaneous.LinkerFlags>-lprintf_flt</avrgcc.linker.miscellaneous.LinkerFlags>
+        <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
+      </AvrGcc>
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
@@ -153,159 +153,155 @@
     <Folder Include="src" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\include\boot.h">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\include\boot.h">
       <SubType>compile</SubType>
       <Link>include\boot.h</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\include\delay_x.h">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\include\delay_x.h">
       <SubType>compile</SubType>
       <Link>include\delay_x.h</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\include\droplet_init.h">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\include\droplet_init.h">
       <SubType>compile</SubType>
       <Link>include\droplet_init.h</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\include\ecc.h">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\include\ecc.h">
       <SubType>compile</SubType>
       <Link>include\ecc.h</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\include\eeprom_driver.h">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\include\eeprom_driver.h">
       <SubType>compile</SubType>
       <Link>include\eeprom_driver.h</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\include\flash_api.h">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\include\flash_api.h">
       <SubType>compile</SubType>
       <Link>include\flash_api.h</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\include\i2c.h">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\include\i2c.h">
       <SubType>compile</SubType>
       <Link>include\i2c.h</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\include\ir_comm.h">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\include\ir_comm.h">
       <SubType>compile</SubType>
       <Link>include\ir_comm.h</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\include\ir_sensor.h">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\include\ir_sensor.h">
       <SubType>compile</SubType>
       <Link>include\ir_sensor.h</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\include\motor.h">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\include\motor.h">
       <SubType>compile</SubType>
       <Link>include\motor.h</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\include\pc_comm.h">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\include\pc_comm.h">
       <SubType>compile</SubType>
       <Link>include\pc_comm.h</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\include\power.h">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\include\power.h">
       <SubType>compile</SubType>
       <Link>include\power.h</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\include\random.h">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\include\random.h">
       <SubType>compile</SubType>
       <Link>include\random.h</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\include\range_algs.h">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\include\range_algs.h">
       <SubType>compile</SubType>
       <Link>include\range_algs.h</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\include\rgb_led.h">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\include\rgb_led.h">
       <SubType>compile</SubType>
       <Link>include\rgb_led.h</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\include\rgb_sensor.h">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\include\rgb_sensor.h">
       <SubType>compile</SubType>
       <Link>include\rgb_sensor.h</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\include\scheduler.h">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\include\scheduler.h">
       <SubType>compile</SubType>
       <Link>include\scheduler.h</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\include\serial_handler.h">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\include\serial_handler.h">
       <SubType>compile</SubType>
       <Link>include\serial_handler.h</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\include\sp_driver.h">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\include\sp_driver.h">
       <SubType>compile</SubType>
       <Link>include\sp_driver.h</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\src\boot.c">
-      <SubType>compile</SubType>
-      <Link>src\boot.c</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\src\droplet_init.c">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\src\droplet_init.c">
       <SubType>compile</SubType>
       <Link>src\droplet_init.c</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\src\ecc.c">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\src\ecc.c">
       <SubType>compile</SubType>
       <Link>src\ecc.c</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\src\eeprom_driver.c">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\src\eeprom_driver.c">
       <SubType>compile</SubType>
       <Link>src\eeprom_driver.c</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\src\flash_api.c">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\src\flash_api.c">
       <SubType>compile</SubType>
       <Link>src\flash_api.c</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\src\flash_api_asm.s">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\src\flash_api_asm.s">
       <SubType>compile</SubType>
       <Link>src\flash_api_asm.s</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\src\i2c.c">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\src\i2c.c">
       <SubType>compile</SubType>
       <Link>src\i2c.c</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\src\ir_comm.c">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\src\ir_comm.c">
       <SubType>compile</SubType>
       <Link>src\ir_comm.c</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\src\ir_sensor.c">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\src\ir_sensor.c">
       <SubType>compile</SubType>
       <Link>src\ir_sensor.c</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\src\motor.c">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\src\motor.c">
       <SubType>compile</SubType>
       <Link>src\motor.c</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\src\pc_comm.c">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\src\pc_comm.c">
       <SubType>compile</SubType>
       <Link>src\pc_comm.c</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\src\power.c">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\src\power.c">
       <SubType>compile</SubType>
       <Link>src\power.c</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\src\random.c">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\src\random.c">
       <SubType>compile</SubType>
       <Link>src\random.c</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\src\range_algs.c">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\src\range_algs.c">
       <SubType>compile</SubType>
       <Link>src\range_algs.c</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\src\rgb_led.c">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\src\rgb_led.c">
       <SubType>compile</SubType>
       <Link>src\rgb_led.c</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\src\rgb_sensor.c">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\src\rgb_sensor.c">
       <SubType>compile</SubType>
       <Link>src\rgb_sensor.c</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\src\scheduler.c">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\src\scheduler.c">
       <SubType>compile</SubType>
       <Link>src\scheduler.c</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\src\scheduler_asm.s">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\src\scheduler_asm.s">
       <SubType>compile</SubType>
       <Link>src\scheduler_asm.s</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\src\serial_handler.c">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\src\serial_handler.c">
       <SubType>compile</SubType>
       <Link>src\serial_handler.c</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\..\..\cu-droplet-master\cu-droplet-master\droplet_code\src\sp_driver.s">
+    <Compile Include="..\..\..\..\Git\cu-droplet\droplet_code\src\sp_driver.s">
       <SubType>compile</SubType>
       <Link>src\sp_driver.s</Link>
     </Compile>
