@@ -23,13 +23,13 @@ src/pc_comm.d src/pc_comm.o: \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\math.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\stdlib.h \
- C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/rgb_led.h \
  C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/serial_handler.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\string.h \
  C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/droplet_init.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\util\crc16.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\pgmspace.h \
  C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/pc_comm.h \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/rgb_led.h \
  C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/rgb_sensor.h \
  C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/flash_api.h \
  C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/sp_driver.h \
@@ -90,8 +90,6 @@ c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-g
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\stdlib.h:
 
-C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/rgb_led.h:
-
 C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/serial_handler.h:
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\string.h:
@@ -103,6 +101,8 @@ c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-g
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\pgmspace.h:
 
 C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/pc_comm.h:
+
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/rgb_led.h:
 
 C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/rgb_sensor.h:
 

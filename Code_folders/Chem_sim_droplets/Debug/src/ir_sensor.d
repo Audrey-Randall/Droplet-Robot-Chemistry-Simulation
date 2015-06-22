@@ -23,7 +23,6 @@ src/ir_sensor.d src/ir_sensor.o: \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\lib\gcc\avr\4.8.1\include\stddef.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\stdio.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\lib\gcc\avr\4.8.1\include\stdarg.h \
- C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/rgb_led.h \
  C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/delay_x.h \
  C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/droplet_init.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\util\crc16.h \
@@ -31,6 +30,7 @@ src/ir_sensor.d src/ir_sensor.o: \
  C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/pc_comm.h \
  C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/serial_handler.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\string.h \
+ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/rgb_led.h \
  C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/range_algs.h \
  C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/ir_sensor.h \
  C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/ir_comm.h \
@@ -90,8 +90,6 @@ c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-g
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\lib\gcc\avr\4.8.1\include\stdarg.h:
 
-C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/rgb_led.h:
-
 C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/delay_x.h:
 
 C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/droplet_init.h:
@@ -105,6 +103,8 @@ C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/pc_comm.h:
 C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/serial_handler.h:
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\string.h:
+
+C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/rgb_led.h:
 
 C:\Users\John\ Klingner\Documents\Git\cu-droplet\droplet_code\include/range_algs.h:
 

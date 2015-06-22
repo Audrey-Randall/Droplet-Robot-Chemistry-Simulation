@@ -19,11 +19,9 @@ typedef struct
 	uint8_t bonded;
 }Near_Atom;
 
-uint16_t bonded_atoms[6];
 Near_Atom near_atoms[12]; //this number is pretty arbitrary.
-Atom NULL_ATOM = {{0,0,0,0,0,0,0,0},{0,0},0,0,0};
-Near_Atom NULL_NEAR_ATOM = {{{0,0,0,0,0,0,0,0},{0,0},0,0,0}, 0, 0, 0, 0, 0};
-uint8_t VALENCE_FULL;
+Atom NULL_ATOM = {{0,0,0,0,0,0,0,0},{0,0,0,0,0,0},{0,0},0,0,0};
+Near_Atom NULL_NEAR_ATOM = {{{0,0,0,0,0,0,0,0},{0,0,0,0,0,0},{0,0},0,0,0}, 0, 0, 0, 0, 0};
 void init();
 void loop();
 void handle_msg(ir_msg* msg_struct);
